@@ -116,7 +116,7 @@ let jour = nbrej (mois, annee);
 console.log(jour);*/
 
 
-const btn = document.createElement("button");
+/*const btn = document.createElement("button");
 btn.innerHTML = "Cliquez ici";
 document.body.appendChild(btn);
 
@@ -180,13 +180,54 @@ btn3.addEventListener('click', () => {
 })
 
 const btn4 = document.createElement("button");
-btn4.innerHTML = "un";
+btn4.innerHTML = "Un";
 document.body.appendChild(btn4);
 
 const btn5 = document.createElement("button");
-btn5.innerHTML = "deux";
+btn5.innerHTML = "Deux";
 document.body.appendChild(btn5);
 
 const btn6 = document.createElement("button");
-btn6.innerHTML = "trois";
+btn6.innerHTML = "Trois";
 document.body.appendChild(btn6);
+
+ça c'est caca =>function choix(bouton)
+    alert("C'est le bouton"+ bouton);
+
+bouton.onclick = (e.which);*/
+
+let data = {
+    "id": "0001",
+    "type": "donut",
+    "name": "Cake",
+    "ppu": 0.55,
+    "batters":
+    {
+        "batter":
+            [
+                { "id": "1001", "type": "Rick" },
+                { "id": "1002", "type": "Chocolate" },
+                { "id": "1003", "type": "Blueberry" },
+                { "id": "1004", "type": "Devil's Food" }
+            ]
+    },
+    "topping":
+        [
+            { "id": "5001", "type": "None" },
+            { "id": "5002", "type": "Glazed" },
+            { "id": "5005", "type": "Morty" },
+            { "id": "5007", "type": "helloWorld" },
+            { "id": "5006", "type": "Chocolate with Sprinkles" },
+            { "id": "5003", "type": "Chocolate" },
+            { "id": "5004", "type": "Maple" }
+        ]
+}
+
+console.log(data.name);
+console.log(data.ppu);
+console.log(data.topping);
+console.log(data.batters.batter[3].type);
+console.log(data.topping[6].type);
+console.log(data.topping[1].id);
+
+
